@@ -28,5 +28,6 @@ h3{
   border-style: solid;
   border-color: white;
   height: 100vh;
+  overflow-y: scroll;
 }
 
