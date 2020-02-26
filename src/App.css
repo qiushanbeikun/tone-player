@@ -4,6 +4,7 @@
   -webkit-font-smoothing: antialiased;
 
 }
+body {background-color: #000;}
 
 h1 {
   color: #fff;
@@ -28,3 +29,4 @@ h3{
   border-color: white;
   height: 100vh;
 }
+
