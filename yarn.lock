@@ -6106,6 +6106,13 @@ json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
+jsoneditor-react@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jsoneditor-react/-/jsoneditor-react-3.0.0.tgz#67f14b85c0c0c7626be74009cdeabcee82a9594f"
+  integrity sha512-8A5SSYl2f/mJnSW0zlmhqvKqve2NaGggx++cAPTfP4D3r4wAeCHF51z6NIl9Y8ZNs/uK7RWwMEEA1QIXsqC6Dg==
+  dependencies:
+    prop-types "^15.7.2"
+
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
