@@ -1,4 +1,4 @@
-{
+  const testSheet = {
   "name": "test song",
   "notes": "i dont know what to put here",
   "length": "16",
@@ -110,3 +110,5 @@
     }
   }
 }
+
+export default testSheet

@@ -2,7 +2,7 @@
   background: #000;
   font-family: 'Noto Serif', serif;
   -webkit-font-smoothing: antialiased;
-  text-align: center;
+
 }
 
 h1 {
@@ -11,6 +11,7 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
 }
 
@@ -20,8 +21,10 @@ h3{
   font-style: italic;
   font-weight: 400;
   margin:  30px 0 ;
+  text-align: center;
 }
 .outline {
   border-style: solid;
   border-color: white;
+  height: 100vh;
 }
