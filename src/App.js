@@ -45,7 +45,7 @@ function App() {
                   background: "#000000"
                 }}
                 locale      = { locale }
-                height      = '96%'
+                height      = '90%'
                 width       = '46wd'
               />
             </div>
@@ -178,6 +178,91 @@ function App() {
                        new Audio(testSound).play().then(r => console.log(r))
                      }}>A#
                 </div>
+              </div>
+
+              <div className='keys' period='6'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
+              </div>
+              <div className='keys' period='7'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
+              </div>
+              <div className='keys' period='1'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
+              </div>
+              <div className='keys' period='2'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
+              </div>
+              <div className='keys' period='1'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
+              </div>
+              <div className='keys' period='2'>
+                <div className="key" tone="1" tome-note="C">C</div>
+                <div className="key" tone="2" tome-note="D">D</div>
+                <div className="key" tone="3" tome-note="E">E</div>
+                <div className="key" tone="4" tome-note="F">F</div>
+                <div className="key" tone="5" tome-note="G">G</div>
+                <div className="key" tone="6" tome-note="A">A</div>
+                <div className="key" tone="7" tome-note="B">B</div>
+                <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                <div className="key-sharp" tone="65" tome-note="C">A#</div>
               </div>
 
             </div>

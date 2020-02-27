@@ -29,13 +29,13 @@ h3{
   border-style: solid;
   border-color: white;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .keys {
   position: relative;
   display: block;
-  background: #cccccc;
+  background: #000000;
 }
 
 .key {
@@ -75,6 +75,7 @@ h3{
 
 .key-sharp{
   color: white;
+  text-align: right;
   font-size: 13px;
   width: 3%;
   background: black;
