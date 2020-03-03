@@ -25,10 +25,19 @@ h3{
   text-align: center;
 }
 
+h6 {
+  color: white;
+  margin: 0;
+}
+
 .outline {
   border-style: solid;
   border-color: white;
   height: 100vh;
+  overflow-x: scroll;
+}
+
+.sheetArea {
   overflow-x: scroll;
 }
 
@@ -41,7 +50,7 @@ h3{
 .key {
   color: black;
   font-size: 13px;
-  width: 5%;
+  width: 50px;
   background: white;
   position: relative;
   float: top;
@@ -72,12 +81,11 @@ h3{
   top: 95px;
 }
 
-
 .key-sharp{
   color: white;
   text-align: right;
   font-size: 13px;
-  width: 3%;
+  width: 30px;
   background: black;
   position: absolute;
   display: block;

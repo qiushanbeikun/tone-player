@@ -3,6 +3,7 @@
   "notes": "i dont know what to put here",
   "length": "16",
   "tones" : "maybe this section is required for some reasons",
+    "credits" : " LiSA - KALEIDO",
   "sheets": {
     "sound_1":{
       "time": "0",

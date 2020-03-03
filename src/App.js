@@ -52,218 +52,236 @@ function App() {
           </Grid>
 
           <Grid item sm={6}>
+
+
             <div className="outline">
+
               <h3>Graphic Editor</h3>
-              <div className='keys' period='4'>
-                <div className="key" tone="1" tome-note="C"
-                     onMouseEnter={() => {
-                       new Audio(fourOne).play().then(r => console.log(r))
-                     }}>C
-                </div>
-                <div className="key" tone="2" tome-note="D"
-                     onMouseEnter={() => {
-                       new Audio(fourTwo).play().then(r => console.log(r))
-                     }}>D
-                </div>
-                <div className="key" tone="3" tome-note="E"
-                     onMouseEnter={() => {
-                       new Audio(fourThree).play().then(r => console.log(r))
-                     }}>E
-                </div>
-                <div className="key" tone="4" tome-note="F"
-                     onMouseEnter={() => {
-                       new Audio(fourFour).play().then(r => console.log(r))
-                     }}>F
-                </div>
-                <div className="key" tone="5" tome-note="G"
-                     onMouseEnter={() => {
-                       new Audio(fourFive).play().then(r => console.log(r))
-                     }}>G
-                </div>
-                <div className="key" tone="6" tome-note="A"
-                     onMouseEnter={() => {
-                       new Audio(fourSix).play().then(r => console.log(r))
-                     }}>A
-                </div>
-                <div className="key" tone="7" tome-note="B"
-                     onMouseEnter={() => {
-                       new Audio(fourSeven).play().then(r => console.log(r))
-                     }}>B
-                </div>
-                <div className="key-sharp" tone="15" tome-note="CS"
-                     onMouseEnter={() => {
-                       new Audio(fourOneFive).play().then(r => console.log(r))
-                     }}>C#
-                </div>
-                <div className="key-sharp" tone="25" tome-note="DS"
-                     onMouseEnter={() => {
-                       new Audio(fourTwoFive).play().then(r => console.log(r))
-                     }}>D#
-                </div>
-                <div className="key-sharp" tone="45" tome-note="FS"
-                     onMouseEnter={() => {
-                       new Audio(fourFourFive).play().then(r => console.log(r))
-                     }}>F#
-                </div>
-                <div className="key-sharp" tone="55" tome-note="GS"
-                     onMouseEnter={() => {
-                       new Audio(fourFiveFive).play().then(r => console.log(r))
-                     }}>G#
-                </div>
-                <div className="key-sharp" tone="65" tome-note="AS"
-                     onMouseEnter={() => {
-                       new Audio(fourSixFive).play().then(r => console.log(r))
-                     }}>A#
-                </div>
-              </div>
 
-              <div className='keys' period='5'>
-                <div className="key" tone="1" tome-note="C"
-                     onMouseEnter={() => {
-                       new Audio(fiveOne).play().then(r => console.log(r))
-                     }}>C
-                </div>
-                <div className="key" tone="2" tome-note="D"
-                     onMouseEnter={() => {
-                       new Audio(fiveTwo).play().then(r => console.log(r))
-                     }}>D
-                </div>
-                <div className="key" tone="3" tome-note="E"
-                     onMouseEnter={() => {
-                       new Audio(fiveThree).play().then(r => console.log(r))
-                     }}>E
-                </div>
-                <div className="key" tone="4" tome-note="F"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>F
-                </div>
-                <div className="key" tone="5" tome-note="G"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>G
-                </div>
-                <div className="key" tone="6" tome-note="A"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>A
-                </div>
-                <div className="key" tone="7" tome-note="B"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>B
-                </div>
-                <div className="key-sharp" tone="15" tome-note="CS"
-                     onMouseEnter={() => {
-                       new Audio(fiveOneFive).play().then(r => console.log(r))
-                     }}>C#
-                </div>
-                <div className="key-sharp" tone="25" tome-note="DS"
-                     onMouseEnter={() => {
-                       new Audio(fiveTwoFive).play().then(r => console.log(r))
-                     }}>D#
-                </div>
-                <div className="key-sharp" tone="45" tome-note="FS"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>F#
-                </div>
-                <div className="key-sharp" tone="55" tome-note="GS"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>G#
-                </div>
-                <div className="key-sharp" tone="65" tome-note="AS"
-                     onMouseEnter={() => {
-                       new Audio(testSound).play().then(r => console.log(r))
-                     }}>A#
-                </div>
-              </div>
+              <Grid container>
+                <Grid item sm={0.5}>
+                  <div className='keys' period='4'>
+                    <div className="key" tone="1" tome-note="C"
+                         onMouseEnter={() => {
+                           new Audio(fourOne).play().then(r => console.log(r))
+                         }}>C
+                    </div>
+                    <div className="key" tone="2" tome-note="D"
+                         onMouseEnter={() => {
+                           new Audio(fourTwo).play().then(r => console.log(r))
+                         }}>D
+                    </div>
+                    <div className="key" tone="3" tome-note="E"
+                         onMouseEnter={() => {
+                           new Audio(fourThree).play().then(r => console.log(r))
+                         }}>E
+                    </div>
+                    <div className="key" tone="4" tome-note="F"
+                         onMouseEnter={() => {
+                           new Audio(fourFour).play().then(r => console.log(r))
+                         }}>F
+                    </div>
+                    <div className="key" tone="5" tome-note="G"
+                         onMouseEnter={() => {
+                           new Audio(fourFive).play().then(r => console.log(r))
+                         }}>G
+                    </div>
+                    <div className="key" tone="6" tome-note="A"
+                         onMouseEnter={() => {
+                           new Audio(fourSix).play().then(r => console.log(r))
+                         }}>A
+                    </div>
+                    <div className="key" tone="7" tome-note="B"
+                         onMouseEnter={() => {
+                           new Audio(fourSeven).play().then(r => console.log(r))
+                         }}>B
+                    </div>
+                    <div className="key-sharp" tone="15" tome-note="CS"
+                         onMouseEnter={() => {
+                           new Audio(fourOneFive).play().then(r => console.log(r))
+                         }}>C#
+                    </div>
+                    <div className="key-sharp" tone="25" tome-note="DS"
+                         onMouseEnter={() => {
+                           new Audio(fourTwoFive).play().then(r => console.log(r))
+                         }}>D#
+                    </div>
+                    <div className="key-sharp" tone="45" tome-note="FS"
+                         onMouseEnter={() => {
+                           new Audio(fourFourFive).play().then(r => console.log(r))
+                         }}>F#
+                    </div>
+                    <div className="key-sharp" tone="55" tome-note="GS"
+                         onMouseEnter={() => {
+                           new Audio(fourFiveFive).play().then(r => console.log(r))
+                         }}>G#
+                    </div>
+                    <div className="key-sharp" tone="65" tome-note="AS"
+                         onMouseEnter={() => {
+                           new Audio(fourSixFive).play().then(r => console.log(r))
+                         }}>A#
+                    </div>
+                  </div>
 
-              <div className='keys' period='6'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
-              <div className='keys' period='7'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
-              <div className='keys' period='1'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
-              <div className='keys' period='2'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
-              <div className='keys' period='1'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
-              <div className='keys' period='2'>
-                <div className="key" tone="1" tome-note="C">C</div>
-                <div className="key" tone="2" tome-note="D">D</div>
-                <div className="key" tone="3" tome-note="E">E</div>
-                <div className="key" tone="4" tome-note="F">F</div>
-                <div className="key" tone="5" tome-note="G">G</div>
-                <div className="key" tone="6" tome-note="A">A</div>
-                <div className="key" tone="7" tome-note="B">B</div>
-                <div className="key-sharp" tone="15" tome-note="C">C#</div>
-                <div className="key-sharp" tone="25" tome-note="C">D#</div>
-                <div className="key-sharp" tone="45" tome-note="C">F#</div>
-                <div className="key-sharp" tone="55" tome-note="C">G#</div>
-                <div className="key-sharp" tone="65" tome-note="C">A#</div>
-              </div>
+                  <div className='keys' period='5'>
+                    <div className="key" tone="1" tome-note="C"
+                         onMouseEnter={() => {
+                           new Audio(fiveOne).play().then(r => console.log(r))
+                         }}>C
+                    </div>
+                    <div className="key" tone="2" tome-note="D"
+                         onMouseEnter={() => {
+                           new Audio(fiveTwo).play().then(r => console.log(r))
+                         }}>D
+                    </div>
+                    <div className="key" tone="3" tome-note="E"
+                         onMouseEnter={() => {
+                           new Audio(fiveThree).play().then(r => console.log(r))
+                         }}>E
+                    </div>
+                    <div className="key" tone="4" tome-note="F"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>F
+                    </div>
+                    <div className="key" tone="5" tome-note="G"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>G
+                    </div>
+                    <div className="key" tone="6" tome-note="A"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>A
+                    </div>
+                    <div className="key" tone="7" tome-note="B"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>B
+                    </div>
+                    <div className="key-sharp" tone="15" tome-note="CS"
+                         onMouseEnter={() => {
+                           new Audio(fiveOneFive).play().then(r => console.log(r))
+                         }}>C#
+                    </div>
+                    <div className="key-sharp" tone="25" tome-note="DS"
+                         onMouseEnter={() => {
+                           new Audio(fiveTwoFive).play().then(r => console.log(r))
+                         }}>D#
+                    </div>
+                    <div className="key-sharp" tone="45" tome-note="FS"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>F#
+                    </div>
+                    <div className="key-sharp" tone="55" tome-note="GS"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>G#
+                    </div>
+                    <div className="key-sharp" tone="65" tome-note="AS"
+                         onMouseEnter={() => {
+                           new Audio(testSound).play().then(r => console.log(r))
+                         }}>A#
+                    </div>
+                  </div>
+
+
+                  <div className='keys' period='6'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                  <div className='keys' period='7'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                  <div className='keys' period='1'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                  <div className='keys' period='2'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                  <div className='keys' period='1'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                  <div className='keys' period='2'>
+                    <div className="key" tone="1" tome-note="C">C</div>
+                    <div className="key" tone="2" tome-note="D">D</div>
+                    <div className="key" tone="3" tome-note="E">E</div>
+                    <div className="key" tone="4" tome-note="F">F</div>
+                    <div className="key" tone="5" tome-note="G">G</div>
+                    <div className="key" tone="6" tome-note="A">A</div>
+                    <div className="key" tone="7" tome-note="B">B</div>
+                    <div className="key-sharp" tone="15" tome-note="C">C#</div>
+                    <div className="key-sharp" tone="25" tome-note="C">D#</div>
+                    <div className="key-sharp" tone="45" tome-note="C">F#</div>
+                    <div className="key-sharp" tone="55" tome-note="C">G#</div>
+                    <div className="key-sharp" tone="65" tome-note="C">A#</div>
+                  </div>
+                </Grid>
+
+                <Grid item sm={5.5}>
+                  <div className="sheetArea">
+                    <h6>asdfghjkl111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h6>
+                  </div>
+                </Grid>
+              </Grid>
+
+
+
 
             </div>
           </Grid>
