@@ -43,8 +43,8 @@ h6 {
 }
 
 .sheetArea {
-  height: 100vh;
   overflow-x: scroll;
+  height: inherit;
 }
 
 .keys {

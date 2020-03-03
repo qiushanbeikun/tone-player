@@ -6,8 +6,7 @@ import testSheetJSON from './sheets/testSheetJSON'
 import JSONInput from 'react-json-editor-ajrm';
 import locale    from 'react-json-editor-ajrm/locale/en';
 import {StyledButton} from "./components/commonStyles";
-import {renderSheet} from "./components/renderSheets";
-
+// import {renderSheet} from "./components/renderSheets";
 
 import testSound from './soundsource/testsounds/sampleSound.wav'
 import fourOne from './soundsource/piano/410.wav'
@@ -28,15 +27,12 @@ import fiveOneFive from './soundsource/piano/515.wav'
 import fiveTwo from './soundsource/piano/520.wav'
 import fiveTwoFive from './soundsource/piano/525.wav'
 import fiveThree from './soundsource/piano/530.wav'
-import color from "@material-ui/core/colors/red";
 
 
 
 function handleSaveClick(event) {
   event.preventDefault();
-  console.log(testSheetJSON.sheets.map((eachTone, i) => (
-    eachTone.sound.time
-  )));
+  console.log("clicked");
 }
 
 
@@ -68,7 +64,6 @@ function App() {
 
           <Grid item sm={6}>
 
-
             <div className="outlineRight">
 
               <h3>Graphic Editor</h3>
@@ -78,62 +73,62 @@ function App() {
                   <div className='keys' period='4'>
                     <div className="key" tone="1" tome-note="C"
                          onMouseEnter={() => {
-                           new Audio(fourOne).play().then(r => console.log(r))
+                           new Audio(fourOne).play().then(r => console.log("r"))
                          }}>C
                     </div>
                     <div className="key" tone="2" tome-note="D"
                          onMouseEnter={() => {
-                           new Audio(fourTwo).play().then(r => console.log(r))
+                           new Audio(fourTwo).play().then(r => console.log("r"))
                          }}>D
                     </div>
                     <div className="key" tone="3" tome-note="E"
                          onMouseEnter={() => {
-                           new Audio(fourThree).play().then(r => console.log(r))
+                           new Audio(fourThree).play().then(r => console.log("r"))
                          }}>E
                     </div>
                     <div className="key" tone="4" tome-note="F"
                          onMouseEnter={() => {
-                           new Audio(fourFour).play().then(r => console.log(r))
+                           new Audio(fourFour).play().then(r => console.log("r"))
                          }}>F
                     </div>
                     <div className="key" tone="5" tome-note="G"
                          onMouseEnter={() => {
-                           new Audio(fourFive).play().then(r => console.log(r))
+                           new Audio(fourFive).play().then(r => console.log("r"))
                          }}>G
                     </div>
                     <div className="key" tone="6" tome-note="A"
                          onMouseEnter={() => {
-                           new Audio(fourSix).play().then(r => console.log(r))
+                           new Audio(fourSix).play().then(r => console.log("r"))
                          }}>A
                     </div>
                     <div className="key" tone="7" tome-note="B"
                          onMouseEnter={() => {
-                           new Audio(fourSeven).play().then(r => console.log(r))
+                           new Audio(fourSeven).play().then(r => console.log("r"))
                          }}>B
                     </div>
                     <div className="key-sharp" tone="15" tome-note="CS"
                          onMouseEnter={() => {
-                           new Audio(fourOneFive).play().then(r => console.log(r))
+                           new Audio(fourOneFive).play().then(r => console.log("r"))
                          }}>C#
                     </div>
                     <div className="key-sharp" tone="25" tome-note="DS"
                          onMouseEnter={() => {
-                           new Audio(fourTwoFive).play().then(r => console.log(r))
+                           new Audio(fourTwoFive).play().then(r => console.log("r"))
                          }}>D#
                     </div>
                     <div className="key-sharp" tone="45" tome-note="FS"
                          onMouseEnter={() => {
-                           new Audio(fourFourFive).play().then(r => console.log(r))
+                           new Audio(fourFourFive).play().then(r => console.log("r"))
                          }}>F#
                     </div>
                     <div className="key-sharp" tone="55" tome-note="GS"
                          onMouseEnter={() => {
-                           new Audio(fourFiveFive).play().then(r => console.log(r))
+                           new Audio(fourFiveFive).play().then(r => console.log("r"))
                          }}>G#
                     </div>
                     <div className="key-sharp" tone="65" tome-note="AS"
                          onMouseEnter={() => {
-                           new Audio(fourSixFive).play().then(r => console.log(r))
+                           new Audio(fourSixFive).play().then(r => console.log("r"))
                          }}>A#
                     </div>
                   </div>
@@ -141,62 +136,62 @@ function App() {
                   <div className='keys' period='5'>
                     <div className="key" tone="1" tome-note="C"
                          onMouseEnter={() => {
-                           new Audio(fiveOne).play().then(r => console.log(r))
+                           new Audio(fiveOne).play().then(r => console.log("r"))
                          }}>C
                     </div>
                     <div className="key" tone="2" tome-note="D"
                          onMouseEnter={() => {
-                           new Audio(fiveTwo).play().then(r => console.log(r))
+                           new Audio(fiveTwo).play().then(r => console.log("r"))
                          }}>D
                     </div>
                     <div className="key" tone="3" tome-note="E"
                          onMouseEnter={() => {
-                           new Audio(fiveThree).play().then(r => console.log(r))
+                           new Audio(fiveThree).play().then(r => console.log("r"))
                          }}>E
                     </div>
                     <div className="key" tone="4" tome-note="F"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>F
                     </div>
                     <div className="key" tone="5" tome-note="G"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>G
                     </div>
                     <div className="key" tone="6" tome-note="A"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>A
                     </div>
                     <div className="key" tone="7" tome-note="B"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>B
                     </div>
                     <div className="key-sharp" tone="15" tome-note="CS"
                          onMouseEnter={() => {
-                           new Audio(fiveOneFive).play().then(r => console.log(r))
+                           new Audio(fiveOneFive).play().then(r => console.log("r"))
                          }}>C#
                     </div>
                     <div className="key-sharp" tone="25" tome-note="DS"
                          onMouseEnter={() => {
-                           new Audio(fiveTwoFive).play().then(r => console.log(r))
+                           new Audio(fiveTwoFive).play().then(r => console.log("r"))
                          }}>D#
                     </div>
                     <div className="key-sharp" tone="45" tome-note="FS"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>F#
                     </div>
                     <div className="key-sharp" tone="55" tome-note="GS"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>G#
                     </div>
                     <div className="key-sharp" tone="65" tome-note="AS"
                          onMouseEnter={() => {
-                           new Audio(testSound).play().then(r => console.log(r))
+                           new Audio(testSound).play().then(r => console.log("r"))
                          }}>A#
                     </div>
                   </div>
