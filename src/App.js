@@ -2,10 +2,13 @@ import React from 'react';
 import './App.css';
 import {Container} from "@material-ui/core";
 import Grid from '@material-ui/core/Grid';
-import testSheet from './sheets/testSheet';
+import testSheetJSON from './sheets/testSheetJSON'
 import JSONInput from 'react-json-editor-ajrm';
 import locale    from 'react-json-editor-ajrm/locale/en';
 import {StyledButton} from "./components/commonStyles";
+import {renderSheet} from "./components/renderSheets";
+
+
 import testSound from './soundsource/testsounds/sampleSound.wav'
 import fourOne from './soundsource/piano/410.wav'
 import fourOneFive from './soundsource/piano/415.wav'
@@ -25,8 +28,20 @@ import fiveOneFive from './soundsource/piano/515.wav'
 import fiveTwo from './soundsource/piano/520.wav'
 import fiveTwoFive from './soundsource/piano/525.wav'
 import fiveThree from './soundsource/piano/530.wav'
+import color from "@material-ui/core/colors/red";
 
 
+
+function handleSaveClick(event) {
+  event.preventDefault();
+  console.log(testSheetJSON.sheets.map((eachTone, i) => (
+    eachTone.sound.time
+  )));
+}
+
+
+
+const sheets = testSheetJSON.sheets;
 
 function App() {
   return (
@@ -39,7 +54,7 @@ function App() {
             <h3>JSON Editor</h3>
               <JSONInput
                 id          = 'a_unique_id'
-                placeholder = { testSheet }
+                placeholder = { testSheetJSON }
                 colors={{
                   string: "#DAA520",
                   background: "#000000"
@@ -54,12 +69,12 @@ function App() {
           <Grid item sm={6}>
 
 
-            <div className="outline">
+            <div className="outlineRight">
 
               <h3>Graphic Editor</h3>
 
               <Grid container>
-                <Grid item sm={0.5}>
+                <Grid item sm={1}>
                   <div className='keys' period='4'>
                     <div className="key" tone="1" tome-note="C"
                          onMouseEnter={() => {
@@ -273,25 +288,27 @@ function App() {
                   </div>
                 </Grid>
 
-                <Grid item sm={5.5}>
+                <Grid item sm={11}>
                   <div className="sheetArea">
-                    <h6>asdfghjkl111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h6>
+                    {
+                      sheets.map((eachTone, i)=> (
+                        <div className="soundDisplay">
+                          {eachTone.sound.tone}
+                        </div>
+                      ))
+                    }
                   </div>
                 </Grid>
               </Grid>
-
-
-
-
             </div>
           </Grid>
 
           <Grid item sm={6}>
-            <StyledButton>Save(Beta)</StyledButton>
+            <StyledButton onClick={handleSaveClick}>Save(Beta)</StyledButton>
           </Grid>
 
           <Grid item sm={6}>
-            <StyledButton>Play(Beta)</StyledButton>
+            <StyledButton >Play(Beta)</StyledButton>
           </Grid>
 
         </Grid>
