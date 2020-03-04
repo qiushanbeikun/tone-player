@@ -6,7 +6,6 @@ import testSheetJSON from './sheets/testSheetJSON'
 import JSONInput from 'react-json-editor-ajrm';
 import locale    from 'react-json-editor-ajrm/locale/en';
 import {StyledButton} from "./components/commonStyles";
-// import {renderSheet} from "./components/renderSheets";
 
 import testSound from './soundsource/testsounds/sampleSound.wav'
 import fourOne from './soundsource/piano/410.wav'
@@ -27,6 +26,7 @@ import fiveOneFive from './soundsource/piano/515.wav'
 import fiveTwo from './soundsource/piano/520.wav'
 import fiveTwoFive from './soundsource/piano/525.wav'
 import fiveThree from './soundsource/piano/530.wav'
+import styled from "styled-components";
 
 
 
@@ -35,9 +35,48 @@ function handleSaveClick(event) {
   console.log("clicked");
 }
 
-
-
 const sheets = testSheetJSON.sheets;
+
+function renderSheet(sheetToRender){
+  if (SheetQualityCheck(sheetToRender)){
+    return (
+      <div className="sheetArea">
+        {sheets.map((eachTone, i)=> (
+          renderEachSound(eachTone)
+        ))}
+      </div>
+    )
+  } else {
+    return (
+      <h3>
+        The sheet cannot be rendered, please check JSON
+      </h3>
+    )
+  }
+}
+
+function SheetQualityCheck(sheet){
+  // todo implement the check function
+  return true;
+}
+
+function renderEachSound(sound){
+  if (sound.sound.tone.length === 3) {
+    return (
+      <div className="soundDisplay">
+        {sound.sound.tone}
+      </div>
+    )
+  } else {
+    return (
+      <div className="soundSharpDisplay">
+        {sound.sound.tone}
+      </div>
+    )
+
+  }
+}
+
 
 function App() {
   return (
@@ -284,15 +323,9 @@ function App() {
                 </Grid>
 
                 <Grid item sm={11}>
-                  <div className="sheetArea">
-                    {
-                      sheets.map((eachTone, i)=> (
-                        <div className="soundDisplay">
-                          {eachTone.sound.tone}
-                        </div>
-                      ))
-                    }
-                  </div>
+                  {
+                    renderSheet(sheets)
+                  }
                 </Grid>
               </Grid>
             </div>

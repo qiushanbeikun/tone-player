@@ -107,3 +107,13 @@ h6 {
   width: 50px;
 }
 
+.soundSharpDisplay {
+  font-size: 13px;
+  color: white;
+  background-color: coral;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 50px;
+}
+
