@@ -6,6 +6,8 @@ import testSheetJSON from './sheets/testSheetJSON'
 import JSONInput from 'react-json-editor-ajrm';
 import locale    from 'react-json-editor-ajrm/locale/en';
 import {StyledButton} from "./components/commonStyles";
+import renderEachSound, {SheetQualityCheck} from "./components/renderSheets"
+
 
 import testSound from './soundsource/testsounds/sampleSound.wav'
 import fourOne from './soundsource/piano/410.wav'
@@ -26,7 +28,7 @@ import fiveOneFive from './soundsource/piano/515.wav'
 import fiveTwo from './soundsource/piano/520.wav'
 import fiveTwoFive from './soundsource/piano/525.wav'
 import fiveThree from './soundsource/piano/530.wav'
-import styled from "styled-components";
+
 
 
 
@@ -55,27 +57,9 @@ function renderSheet(sheetToRender){
   }
 }
 
-function SheetQualityCheck(sheet){
-  // todo implement the check function
-  return true;
-}
 
-function renderEachSound(sound){
-  if (sound.sound.tone.length === 3) {
-    return (
-      <div className="soundDisplay">
-        {sound.sound.tone}
-      </div>
-    )
-  } else {
-    return (
-      <div className="soundSharpDisplay">
-        {sound.sound.tone}
-      </div>
-    )
 
-  }
-}
+const StarterSheet = testSheetJSON;
 
 
 function App() {
@@ -89,7 +73,7 @@ function App() {
             <h3>JSON Editor</h3>
               <JSONInput
                 id          = 'a_unique_id'
-                placeholder = { testSheetJSON }
+                placeholder = { StarterSheet }
                 colors={{
                   string: "#DAA520",
                   background: "#000000"
