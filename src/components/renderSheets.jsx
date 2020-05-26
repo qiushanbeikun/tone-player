@@ -36,7 +36,7 @@ const StyledSoundKeys = styled.div`
 
 
 
-function KeySwitches(inputTone) {
+export function KeySwitches(inputTone) {
   let tone = null;
 
   switch(inputTone) {
@@ -109,9 +109,9 @@ function PositionTop(inputTone) {
   const first = inputTone.split(" ")[0];
   const second = inputTone.split(" ")[1];
   if (second.length === 1) {
-    return (first-4) * 14 + second * 14;
+    return (first-4) * 14 * 7 + second * 14;
   } else {
-    return Math.floor((first-4) * 14 + second * 14 / 10);
+    return Math.floor((first-4) * 14 * 7 + second * 14 / 10);
   }
 }
 
@@ -156,4 +156,22 @@ export default function renderEachSound(sound){
     )
 
   }
+}
+
+export function renderSheetArrayAndOrder(JSONSheet) {
+  let result  = [];
+  for (let each of JSONSheet){
+    let beforeSort = [parseFloat(each.sound.time), parseFloat(each.sound.length), each.sound.tone];
+    result = [...result, beforeSort];
+  }
+  if (result === []){
+    alert("The sheet is empty, please check your sheet");
+  }
+
+  result.sort(
+    function(a, b) {
+      return a[0] < b[0] ? -1 : 1;
+    }
+  );
+  return result;
 }

@@ -6,7 +6,7 @@ import testSheetJSON from './sheets/testSheetJSON'
 import JSONInput from 'react-json-editor-ajrm';
 import locale    from 'react-json-editor-ajrm/locale/en';
 import {StyledButton} from "./components/commonStyles";
-import renderEachSound, {SheetQualityCheck} from "./components/renderSheets"
+import renderEachSound, {SheetQualityCheck, renderSheetArrayAndOrder, KeySwitches} from "./components/renderSheets"
 
 
 import testSound from './soundsource/testsounds/sampleSound.wav'
@@ -29,7 +29,7 @@ import fiveTwo from './soundsource/piano/520.wav'
 import fiveTwoFive from './soundsource/piano/525.wav'
 import fiveThree from './soundsource/piano/530.wav'
 
-
+const PLAY_SPEED = 750;
 
 
 function handleSaveClick(event) {
@@ -41,6 +41,7 @@ const sheets = testSheetJSON.sheets;
 
 function renderSheet(sheetToRender){
   if (SheetQualityCheck(sheetToRender)){
+
     return (
       <div className="sheetArea">
         {sheets.map((eachTone, i)=> (
@@ -57,7 +58,16 @@ function renderSheet(sheetToRender){
   }
 }
 
+const playSheet = async (event) => {
+  event.preventDefault();
+  const tempSheet = renderSheetArrayAndOrder(sheets);
 
+  for(let each of tempSheet) {
+    setTimeout(function () {
+      new Audio(KeySwitches(each[2])).play();
+    }, each[0] * PLAY_SPEED)
+  }
+};
 
 const StarterSheet = testSheetJSON;
 
@@ -307,9 +317,11 @@ function App() {
                 </Grid>
 
                 <Grid item sm={11}>
+                  <div>
                   {
                     renderSheet(sheets)
                   }
+                  </div>
                 </Grid>
               </Grid>
             </div>
@@ -320,7 +332,7 @@ function App() {
           </Grid>
 
           <Grid item sm={6}>
-            <StyledButton >Play(Beta)</StyledButton>
+            <StyledButton onClick={playSheet}>Play(Beta)</StyledButton>
           </Grid>
 
         </Grid>
